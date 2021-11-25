@@ -1,4 +1,4 @@
-# User Management For Linux Server.
+# User Management For Linux Server
 
 ## This is a mini project that manage users in the server side (linux) by using Bash Script.
 

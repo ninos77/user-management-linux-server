@@ -12,8 +12,7 @@
 12 echo 'e = Delete all users'
 13 echo 
 14         read choice
-15         case $choice in 
-16         
+15         case $choice in
 a)      /var/www/user-management-linux-server/create_single_user;;
 b)      /var/www/user-management-linux-serverbash_scr/create_many_users_list;;
 c)      /var/www/user-management-linux-serverbash_scr/delete_single_user;;

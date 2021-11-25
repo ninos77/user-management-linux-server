@@ -9,7 +9,7 @@
    f=${first_name:0:2}
    l=${last_name:0:2}
  #arr_users+=("${f,}${l,}")
-   echo sudo  ${f,}${l,} >> handle.txt
+   echo  ${f,}${l,} >> handle.txt
  done <  <(tail -n +2 $names_list)
 
  usersfile=/var/www/user-management-linux-server/handle.txt

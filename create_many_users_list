@@ -9,11 +9,11 @@
    f=${first_name:0:2}
    l=${last_name:0:2}
  #arr_users+=("${f,}${l,}")
-   echo  ${f,}${l,} >> handle.txt
+   sudo echo  ${f,}${l,} >> handle.txt
  done <  <(tail -n +2 $names_list)
 
  usersfile=/var/www/user-management-linux-server/handle.txt
- usernames=$(cat $usersfile | tr 'A-Z' 'a-z' | head -5)
+ usernames=$(cat $usersfile | tr 'A-Z' 'a-z' | head -3)
  count=0
  for user in $usernames
  do

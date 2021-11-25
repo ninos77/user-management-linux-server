@@ -1,15 +1,22 @@
- #!/bin/bash
- clear
- echo "===All Users===="
- ls /home/
- echo "================"
- echo
- users=$(ls /home/ | cat )
- read -r -p 'Did You want to delet all users y/n? ' a
- if [ $a == "y" ];then
+#!/bin/bash
 
-     sudo deluser --remove-home $user
+clear
+echo "===All Users===="
+ls /home/
+echo "================"
+echo
+read -r -p 'Pleas enter the user you want to exclude from the list above: ' user
+users=$(ls /home/ | cat )
+echo "Are you sure you want to delet all users exclude ${user} y/n?" 
+read a
+if [ $a == "y" ];then
+        for u in $users
+        do
+                if [ "$u" != "$user" ]; then
+                sudo deluser --remove-home $u
+                fi
+        done
+else
+    exit 0
+fi
 
- else
-     exit 0
- fi

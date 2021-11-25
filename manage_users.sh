@@ -14,10 +14,10 @@
 14         read choice
 15         case $choice in
 a)      /var/www/user-management-linux-server/create_single_user;;
-b)      /var/www/user-management-linux-serverbash_scr/create_many_users_list;;
-c)      /var/www/user-management-linux-serverbash_scr/delete_single_user;;
-d)      /var/www/user-management-linux-serverbash_scr/delete_all_except_specfc_usr;;
-e)      /var/www/user-management-linux-serverbash_scr/delete_all_users;;
+b)      /var/www/user-management-linux-server/create_many_users_list;;
+c)      /var/www/user-management-linux-server/delete_single_user;;
+d)      /var/www/user-management-linux-server/delete_all_except_specfc_usr;;
+e)      /var/www/user-management-linux-server/delete_all_users;;
 *)      echo Invalid Choice - Good Bye
 23
 24         esac
